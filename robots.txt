@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://getclients4u-lab.github.io/futureready-advisory/sitemap.xml
+Sitemap: https://futureready-advisory.vercel.app/sitemap.xml
