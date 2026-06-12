@@ -51,6 +51,7 @@
   }
 }
 </script>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" as="style">
 <link rel="stylesheet" href="shared.css">
 <link rel="sitemap" type="application/xml" href="sitemap.xml">
 </head>
@@ -182,10 +183,27 @@
       <h2 class="section-title light">Three steps to decision clarity</h2>
       <p class="section-sub light" style="margin:0 auto">We don't think about growth as a list of channels. We think about it as a system.</p>
     </div>
-    <div class="steps-grid">
-      <div class="step-card fade-in"><div class="step-num">01</div><h3>What's Actually Changing</h3><p>We identify market, customer, and competitive signals that matter — separating inflection points from background noise.</p></div>
-      <div class="step-card fade-in"><div class="step-num">02</div><h3>What Matters Now</h3><p>We translate signals into 3–5 critical decisions. Not a 50-item priority list — the choices that actually move the needle.</p></div>
-      <div class="step-card fade-in"><div class="step-num">03</div><h3>How to Act Without Drift</h3><p>We align execution, define early warning triggers, and build adaptive mechanisms so your organization stays on course.</p></div>
+    <div class="steps-grid" itemscope itemtype="https://schema.org/HowTo">
+      <meta itemprop="name" content="Three Steps to Decision Clarity">
+      <meta itemprop="description" content="FutureReady's systems-first approach to revenue architecture">
+      <div class="step-card fade-in" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+        <meta itemprop="position" content="1">
+        <div class="step-num">01</div>
+        <h3 itemprop="name">What's Actually Changing</h3>
+        <p itemprop="text">We identify market, customer, and competitive signals that matter — separating inflection points from background noise.</p>
+      </div>
+      <div class="step-card fade-in" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+        <meta itemprop="position" content="2">
+        <div class="step-num">02</div>
+        <h3 itemprop="name">What Matters Now</h3>
+        <p itemprop="text">We translate signals into 3–5 critical decisions. Not a 50-item priority list — the choices that actually move the needle.</p>
+      </div>
+      <div class="step-card fade-in" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+        <meta itemprop="position" content="3">
+        <div class="step-num">03</div>
+        <h3 itemprop="name">How to Act Without Drift</h3>
+        <p itemprop="text">We align execution, define early warning triggers, and build adaptive mechanisms so your organization stays on course.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -296,7 +314,7 @@
     </div>
     <div class="team-cards">
       <div class="team-card fade-in">
-        <div class="team-card-img"><img src="img/rob.jpg" alt="Robert Goldberg - Managing Partner at FutureReady Advisory"></div>
+        <div class="team-card-img"><img src="img/rob.jpg" alt="Robert Goldberg - Managing Partner at FutureReady Advisory" loading="lazy" decoding="async"></div>
         <div class="team-card-body">
           <h3>Robert Goldberg</h3>
           <div class="team-card-role">Managing Partner — Strategy &amp; Market Intelligence</div>
@@ -304,7 +322,7 @@
         </div>
       </div>
       <div class="team-card fade-in">
-        <div class="team-card-img"><img src="img/jack.jpg" alt="Jack Lee - Partner at FutureReady Advisory"></div>
+        <div class="team-card-img"><img src="img/jack.jpg" alt="Jack Lee - Partner at FutureReady Advisory" loading="lazy" decoding="async"></div>
         <div class="team-card-body">
           <h3>Jack Lee</h3>
           <div class="team-card-role">Partner — Market Development</div>
@@ -312,7 +330,7 @@
         </div>
       </div>
       <div class="team-card fade-in">
-        <div class="team-card-img"><img src="img/hoel.jpg" alt="Hoel Bautista - Partner at FutureReady Advisory"></div>
+        <div class="team-card-img"><img src="img/hoel.jpg" alt="Hoel Bautista - Partner at FutureReady Advisory" loading="lazy" decoding="async"></div>
         <div class="team-card-body">
           <h3>Hoel Bautista</h3>
           <div class="team-card-role">Partner — Technology &amp; AI Strategy</div>
@@ -447,6 +465,121 @@
     {"@type": "ListItem", "position": 4, "name": "Diagnostic", "item": "https://futureready-advisory.vercel.app/diagnostic"},
     {"@type": "ListItem", "position": 5, "name": "Insights", "item": "https://futureready-advisory.vercel.app/insights"},
     {"@type": "ListItem", "position": 6, "name": "Contact", "item": "https://futureready-advisory.vercel.app/contact"}
+  ]
+}
+</script>
+
+<!-- FAQ SECTION -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Clear answers to common questions about revenue architecture and how we work with leadership teams.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">What is revenue architecture?</summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Revenue architecture is a systems-first approach to commercial growth. Instead of treating sales, marketing, and strategy as separate functions, we design them as an integrated system where each decision reinforces the others. This reduces drift, accelerates decision cycles, and creates predictable revenue outcomes.</p>
+        </div>
+      </details>
+      <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">How is revenue architecture different from traditional consulting?</summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Traditional consulting often delivers static recommendations that sit in decks. Revenue architecture is dynamic — we build decision systems, testable hypotheses, and feedback loops that your team uses long after our engagement ends. We focus on decision clarity, not just analysis.</p>
+        </div>
+      </details>
+      <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">What types of companies benefit most from revenue architecture?</summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Leadership teams at B2B companies with $5M-$100M revenue see the strongest results. Specifically: companies preparing for scale, navigating market shifts, replacing founder-led sales with systems, or struggling with strategy-execution gaps.</p>
+        </div>
+      </details>
+      <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">How long does a typical engagement last?</summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Initial engagements typically run 8-12 weeks for decision architecture and commercial clarity. Ongoing advisory relationships extend this with monthly strategy sprints and continuous signal monitoring. We design for quick wins and sustained momentum.</p>
+        </div>
+      </details>
+      <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">What deliverables will our team receive?</summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">You'll receive: a decision framework tailored to your market, tested hypotheses with validation criteria, a revenue system map connecting strategy to execution, and a playbook your team can operate without ongoing dependency on us.</p>
+        </div>
+      </details>
+      <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">How do you measure success?</summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">We track leading indicators: decision cycle time, strategy alignment scores, and signal-to-action velocity. Lagging indicators include revenue growth, customer acquisition efficiency, and reduced execution drift. We establish baselines in week one and measure weekly.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+<style>
+.faq-section{background:var(--cream);padding:7rem 2rem}
+.faq-list{max-width:800px;margin:3rem auto 0}
+.faq-item{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:10px;margin-bottom:1rem;overflow:hidden}
+.faq-item summary{padding:1.5rem 2rem;font-weight:600;color:var(--navy);cursor:pointer;list-style:none;position:relative}
+.faq-item summary::after{content:'+';position:absolute;right:2rem;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--gold);font-weight:300}
+.faq-item[open] summary::after{content:'−'}
+.faq-answer{padding:0 2rem 1.5rem;color:var(--gray);line-height:1.7}
+.faq-answer p{margin:0}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is revenue architecture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Revenue architecture is a systems-first approach to commercial growth. Instead of treating sales, marketing, and strategy as separate functions, we design them as an integrated system where each decision reinforces the others. This reduces drift, accelerates decision cycles, and creates predictable revenue outcomes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is revenue architecture different from traditional consulting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Traditional consulting often delivers static recommendations that sit in decks. Revenue architecture is dynamic — we build decision systems, testable hypotheses, and feedback loops that your team uses long after our engagement ends. We focus on decision clarity, not just analysis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of companies benefit most from revenue architecture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Leadership teams at B2B companies with $5M-$100M revenue see the strongest results. Specifically: companies preparing for scale, navigating market shifts, replacing founder-led sales with systems, or struggling with strategy-execution gaps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a typical engagement last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Initial engagements typically run 8-12 weeks for decision architecture and commercial clarity. Ongoing advisory relationships extend this with monthly strategy sprints and continuous signal monitoring. We design for quick wins and sustained momentum."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What deliverables will our team receive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You'll receive: a decision framework tailored to your market, tested hypotheses with validation criteria, a revenue system map connecting strategy to execution, and a playbook your team can operate without ongoing dependency on us."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you measure success?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We track leading indicators: decision cycle time, strategy alignment scores, and signal-to-action velocity. Lagging indicators include revenue growth, customer acquisition efficiency, and reduced execution drift. We establish baselines in week one and measure weekly."
+      }
+    }
   ]
 }
 </script>
