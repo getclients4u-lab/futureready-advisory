@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "futureready-advisory",
+  "routes": [
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml", "headers": { "Content-Type": "application/xml" } }
+  ]
+}

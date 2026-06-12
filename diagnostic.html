@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0e1a">
+<title>Strategic Diagnostic | FutureReady Advisory — Assess Your Decision Clarity</title>
+<meta name="description" content="Run the FutureReady Strategic Diagnostic to assess your team's decision clarity, alignment, and readiness. Free 5-minute assessment with actionable insights.">
+<meta name="keywords" content="strategic diagnostic, decision clarity assessment, leadership alignment, strategy audit, business assessment">
+<link rel="canonical" href="https://futureready-advisory.vercel.app/diagnostic.html">
+<meta property="og:title" content="Strategic Diagnostic | FutureReady Advisory">
+<meta property="og:description" content="Assess your team's decision clarity and alignment in 5 minutes. Free diagnostic with actionable insights.">
+<meta property="og:url" content="https://futureready-advisory.vercel.app/diagnostic">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FutureReady Advisory">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+<link rel="stylesheet" href="shared.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Quiz",
+  "name": "FutureReady Strategic Diagnostic",
+  "description": "A 5-minute assessment to evaluate decision clarity, strategic alignment, and execution readiness.",
+  "about": "Business strategy and leadership decision-making"
+}
+</script>
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="FutureReady Advisory Home">
+      <span class="logo-mark">FR</span>
+      <span class="logo-text">FutureReady<span class="logo-accent"> Advisory</span></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+      <a href="leadership.html">Team</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="diagnostic.html">Diagnostic</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html" class="nav-cta">Get Started</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<style>
+.diagnostic-hero{background:var(--navy);padding:10rem 2rem 6rem;position:relative;overflow:hidden}
+.diagnostic-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 60% 40%,rgba(201,168,76,.08),transparent 65%)}
+.diagnostic-hero-inner{max-width:900px;margin:0 auto;position:relative}
+.diagnostic-section{background:var(--cream);padding:7rem 2rem}
+.diagnostic-inner{max-width:800px;margin:0 auto}
+.question-card{background:var(--white);border-radius:12px;padding:2.5rem;margin-bottom:1.5rem;box-shadow:var(--shadow);border:1px solid rgba(10,14,26,.04)}
+.question-num{font-family:"Playfair Display",serif;font-size:1rem;color:var(--gold);font-weight:700;margin-bottom:1rem}
+.question-text{font-family:"Playfair Display",serif;font-size:1.2rem;color:var(--navy);margin-bottom:1.5rem;line-height:1.4}
+.options{display:flex;flex-direction:column;gap:.75rem}
+.option-label{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;border:1.5px solid rgba(10,14,26,.08);border-radius:8px;cursor:pointer;transition:all .25s;font-size:.92rem;color:var(--text)}
+.option-label:hover{border-color:var(--gold);background:rgba(201,168,76,.04)}
+.option-label input[type="radio"]{width:20px;height:20px;accent-color:var(--gold);flex-shrink:0}
+.option-label.selected{border-color:var(--gold);background:rgba(201,168,76,.08)}
+.progress-bar{height:4px;background:rgba(10,14,26,.06);border-radius:2px;margin-bottom:3rem;overflow:hidden}
+.progress-fill{height:100%;background:var(--gold);border-radius:2px;transition:width .4s ease}
+.result-card{background:var(--white);border-radius:12px;padding:3rem;box-shadow:var(--shadow-lg);text-align:center;display:none}
+.result-card.visible{display:block}
+.result-score{font-family:"Playfair Display",serif;font-size:5rem;font-weight:700;color:var(--gold);line-height:1}
+.result-label{font-size:1.1rem;color:var(--navy);font-weight:600;margin:1rem 0 .5rem}
+.result-desc{font-size:.95rem;color:var(--gray);line-height:1.7;max-width:500px;margin:0 auto 2rem}
+.result-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+</style>
+
+<section class="diagnostic-hero">
+  <div class="diagnostic-hero-inner">
+    <div class="section-label">Strategic Diagnostic</div>
+    <h1 class="section-title light" style="font-size:clamp(2.4rem,4.5vw,3.4rem)">Assess your decision clarity in 5 minutes.</h1>
+    <p class="section-sub light" style="max-width:680px;margin-top:.75rem">Answer 8 questions about your team's strategic alignment, decision-making process, and execution readiness. Get a personalized score and actionable recommendations.</p>
+  </div>
+</section>
+
+<section class="diagnostic-section">
+  <div class="diagnostic-inner">
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+
+    <form id="diagnostic-form">
+      <div class="question-card fade-in" data-q="1">
+        <div class="question-num">Question 1 of 8</div>
+        <div class="question-text">How clearly can your leadership team articulate the 3–5 most critical decisions facing the business right now?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q1" value="3"> Very clearly — we review them regularly</label>
+          <label class="option-label"><input type="radio" name="q1" value="2"> Somewhat — we have a general sense</label>
+          <label class="option-label"><input type="radio" name="q1" value="1"> Not clearly — priorities shift frequently</label>
+          <label class="option-label"><input type="radio" name="q1" value="0"> Not at all — we're focused on execution</label>
+        </div>
+      </div>
+
+      <div class="question-card fade-in" data-q="2">
+        <div class="question-num">Question 2 of 8</div>
+        <div class="question-text">When a strategic decision is made, how often are the underlying assumptions explicitly documented?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q2" value="3"> Always — assumptions are written and reviewed</label>
+          <label class="option-label"><input type="radio" name="q2" value="2"> Usually — for major decisions only</label>
+          <label class="option-label"><input type="radio" name="q2" value="1"> Rarely — we rely on implicit understanding</label>
+          <label class="option-label"><input type="radio" name="q2" value="0"> Never — we don't document assumptions</label>
+        </div>
+      </div>
+
+      <div class="question-card fade-in" data-q="3">
+        <div class="question-num">Question 3 of 8</div>
+        <div class="question-text">How frequently does your team revisit the same strategic decisions?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q3" value="3"> Rarely — once decided, we move forward</label>
+          <label class="option-label"><input type="radio" name="q3" value="2"> Occasionally — only when new data emerges</label>
+          <label class="option-label"><input type="radio" name="q3" value="1"> Often — same topics resurface monthly</label>
+          <label class="option-label"><input type="radio" name="q3" value="0"> Constantly — we can't seem to close decisions</label>
+        </div>
+      </div>
+
+      <div class="question-card fade-in" data-q="4">
+        <div class="question-num">Question 4 of 8</div>
+        <div class="question-text">How aligned is your team on what "success" looks like for the next 6–12 months?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q4" value="3"> Fully aligned — we have shared KPIs and targets</label>
+          <label class="option-label"><input type="radio" name="q4" value="2"> Mostly aligned — some differences in interpretation</label>
+          <label class="option-label"><input type="radio" name="q4" value="1"> Partially aligned — different departments have different views</label>
+          <label class="option-label"><input type="radio" name="q4" value="0"> Not aligned — everyone has their own priorities</label>
+        </div>
+      </div>
+
+      <div class="question-card fade-in" data-q="5">
+        <div class="question-num">Question 5 of 8</div>
+        <div class="question-text">Do you have defined triggers that signal when a strategic pivot is needed?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q5" value="3"> Yes — we have explicit early warning signals</label>
+          <label class="option-label"><input type="radio" name="q5" value="2"> Somewhat — we monitor key metrics</label>
+          <label class="option-label"><input type="radio" name="q5" value="1"> Not really — we react when problems become obvious</label>
+          <label class="option-label"><input type="radio" name="q5" value="0"> No — we don't have predefined triggers</label>
+        </div>
+      </div>
+
+      <div class="question-card fade-in" data-q="6">
+        <div class="question-num">Question 6 of 8</div>
+        <div class="question-text">How well does your current data and reporting support strategic decision-making?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q6" value="3"> Very well — we have clear, actionable dashboards</label>
+          <label class="option-label"><input type="radio" name="q6" value="2"> Adequately — data exists but requires interpretation</label>
+          <label class="option-label"><input type="radio" name="q6" value="1"> Poorly — we have data but struggle to extract insights</label>
+          <label class="option-label"><input type="radio" name="q6" value="0"> Not at all — we lack the data we need</label>
+        </div>
+      </div>
+
+      <div class="question-card fade-in" data-q="7">
+        <div class="question-num">Question 7 of 8</div>
+        <div class="question-text">How often do market signals get lost or deprioritized in day-to-day operations?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q7" value="3"> Rarely — we have systems to capture and act on signals</label>
+          <label class="option-label"><input type="radio" name="q7" value="2"> Sometimes — important signals occasionally get missed</label>
+          <label class="option-label"><input type="radio" name="q7" value="1"> Often — we're too busy executing to monitor signals</label>
+          <label class="option-label"><input type="radio" name="q7" value="0"> Constantly — we only react to signals after they become problems</label>
+        </div>
+      </div>
+
+      <div class="question-card fade-in" data-q="8">
+        <div class="question-num">Question 8 of 8</div>
+        <div class="question-text">If you had to make your most important strategic decision today, how confident would you be in the outcome?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q8" value="3"> Very confident — we have the data and alignment</label>
+          <label class="option-label"><input type="radio" name="q8" value="2"> Somewhat confident — we'd make the call but with reservations</label>
+          <label class="option-label"><input type="radio" name="q8" value="1"> Not very confident — we'd need more information</label>
+          <label class="option-label"><input type="radio" name="q8" value="0"> Not confident — we'd likely delay or delegate</label>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:2rem">
+        <button type="button" class="btn-primary" id="submit-diagnostic" style="padding:1rem 3rem;font-size:1rem">Get My Results &rarr;</button>
+      </div>
+    </form>
+
+    <div class="result-card" id="result-card">
+      <div class="result-score" id="result-score">0</div>
+      <div class="result-label" id="result-label">Your Decision Clarity Score</div>
+      <div class="result-desc" id="result-desc"></div>
+      <div class="result-actions">
+        <a href="contact.html" class="btn-primary">Book a Strategy Call</a>
+        <a href="solutions.html" class="btn-navy">Explore Solutions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.option-label').forEach(label => {
+  label.addEventListener('click', function() {
+    const card = this.closest('.question-card');
+    card.querySelectorAll('.option-label').forEach(l => l.classList.remove('selected'));
+    this.classList.add('selected');
+    updateProgress();
+  });
+});
+
+function updateProgress() {
+  const answered = document.querySelectorAll('.option-label.selected').length;
+  const pct = (answered / 8) * 100;
+  document.getElementById('progress-fill').style.width = pct + '%';
+}
+
+document.getElementById('submit-diagnostic').addEventListener('click', function() {
+  let total = 0;
+  let answered = 0;
+  for (let i = 1; i <= 8; i++) {
+    const selected = document.querySelector('input[name="q' + i + '"]:checked');
+    if (selected) { total += parseInt(selected.value); answered++; }
+  }
+  if (answered < 8) {
+    alert('Please answer all 8 questions to see your results.');
+    return;
+  }
+  const score = Math.round((total / 24) * 100);
+  document.getElementById('result-score').textContent = score + '%';
+  const label = document.getElementById('result-label');
+  const desc = document.getElementById('result-desc');
+  if (score >= 80) {
+    label.textContent = 'High Decision Clarity';
+    desc.textContent = 'Your team has strong strategic alignment and decision-making discipline. Focus on maintaining this clarity as you scale, and consider how to institutionalize your approach across the organization.';
+  } else if (score >= 60) {
+    label.textContent = 'Moderate Decision Clarity';
+    desc.textContent = 'You have a solid foundation but there are gaps in documentation, alignment, or signal monitoring. A focused engagement to tighten your decision framework could unlock significant performance gains.';
+  } else if (score >= 40) {
+    label.textContent = 'Low Decision Clarity';
+    desc.textContent = 'Decision-making is likely a source of friction and drift. Prioritizing clarity around your critical decisions, assumptions, and ownership would have immediate impact on execution and team confidence.';
+  } else {
+    label.textContent = 'Critical Decision Clarity Gap';
+    desc.textContent = 'Your team is operating without clear strategic direction, which is likely causing significant execution drift and wasted effort. A structured diagnostic and decision framework would be transformative.';
+  }
+  document.getElementById('result-card').classList.add('visible');
+  document.getElementById('result-card').scrollIntoView({behavior:'smooth'});
+});
+</script>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">FR</span>
+        <span class="logo-text">FutureReady<span class="logo-accent"> Advisory</span></span>
+      </a>
+      <p>Translating signals into confident commercial growth.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="leadership.html">Leadership Team</a>
+        <a href="solutions.html">Our Solutions</a>
+        <a href="diagnostic.html">Diagnostic</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="https://www.linkedin.com/in/robgoldberg/" target="_blank" rel="noopener">Robert Goldberg on LinkedIn</a>
+        <a href="https://www.linkedin.com/in/jkleemktgii/" target="_blank" rel="noopener">Jack Lee on LinkedIn</a>
+        <a href="https://www.linkedin.com/in/hoelbautista/" target="_blank" rel="noopener">Hoel Bautista on LinkedIn</a>
+        <a href="contact.html">Schedule a Conversation</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 FutureReady Advisory. All rights reserved.</p>
+    <p>Revenue architecture for leadership teams.</p>
+  </div>
+</footer>
+<script src="shared.js"></script>
+
+</body>
+</html>

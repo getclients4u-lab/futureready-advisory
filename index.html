@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0e1a">
+<title>FutureReady Advisory | Revenue Architecture for Leadership Teams Ready to Scale</title>
+<meta name="description" content="FutureReady Advisory helps leadership teams turn ambiguous market signals into clear, testable revenue decisions. Systems-first approach to strategy, GTM, and commercial clarity.">
+<meta name="keywords" content="revenue architecture, strategy consulting, leadership advisory, market intelligence, decision clarity, executive consulting, commercial growth, go-to-market strategy">
+<link rel="canonical" href="https://futureready-advisory.vercel.app/">
+<meta property="og:title" content="FutureReady Advisory | Revenue Architecture for Leadership Teams">
+<meta property="og:description" content="Turn ambiguous market signals into confident commercial growth. Systems-first strategy consulting for leadership teams.">
+<meta property="og:url" content="https://futureready-advisory.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FutureReady Advisory">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FutureReady Advisory | Revenue Architecture">
+<meta name="twitter:description" content="Translating signals into confident commercial growth.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FutureReady Advisory",
+  "url": "https://futureready-advisory.vercel.app/",
+  "description": "Revenue architecture advisory helping leadership teams turn ambiguous market signals into clear, testable commercial decisions.",
+  "foundingDate": "2026",
+  "founder": [
+    {"@type": "Person", "name": "Robert Goldberg"},
+    {"@type": "Person", "name": "Jack Lee"},
+    {"@type": "Person", "name": "Hoel Bautista"}
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/robgoldberg/",
+    "https://www.linkedin.com/in/jkleemktgii/",
+    "https://www.linkedin.com/in/hoelbautista/"
+  ],
+  "areaServed": ["North America", "Europe", "Africa"],
+  "knowsAbout": ["Revenue Architecture", "Go-to-Market Strategy", "Market Intelligence", "Commercial Strategy", "Leadership Advisory"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "FutureReady Advisory",
+  "url": "https://futureready-advisory.vercel.app/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://futureready-advisory.vercel.app/solutions?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="FutureReady Advisory Home">
+      <span class="logo-mark">FR</span>
+      <span class="logo-text">FutureReady<span class="logo-accent"> Advisory</span></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+      <a href="leadership.html">Team</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="diagnostic.html">Diagnostic</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html" class="nav-cta">Get Started</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<style>
+.hero{min-height:100vh;background:var(--navy);display:flex;align-items:center;position:relative;overflow:hidden;padding:8rem 2rem 5rem}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 75% 35%,rgba(201,168,76,.1),transparent 60%),radial-gradient(ellipse at 20% 85%,rgba(30,41,59,.5),transparent 55%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:72px 72px}
+.hero-inner{max-width:1280px;margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:center}
+@media(max-width:960px){.hero-inner{grid-template-columns:1fr;gap:3rem}}
+.hero-content{max-width:640px}
+.eyebrow{font-size:.68rem;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1.75rem;display:flex;align-items:center;gap:.9rem}
+.eyebrow::before{content:"";display:block;width:36px;height:1px;background:var(--gold);opacity:.5}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(2.6rem,5.5vw,4.4rem);color:var(--white);line-height:1.08;font-weight:700;max-width:720px;margin-bottom:1.75rem;letter-spacing:-1px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero-sub{font-size:1.15rem;color:rgba(255,255,255,.6);max-width:520px;line-height:1.75;margin-bottom:2.75rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;max-width:560px;margin-top:4rem;padding-top:3rem;border-top:1px solid rgba(255,255,255,.07)}
+.hero-stat .num{font-family:"Playfair Display",serif;font-size:2.4rem;font-weight:700;color:var(--gold);line-height:1}
+.hero-stat .lbl{font-size:.78rem;color:rgba(255,255,255,.45);margin-top:.4rem;letter-spacing:.3px}
+@media(max-width:500px){.hero-stats{grid-template-columns:1fr 1fr}}
+.hero-visual{position:relative;display:flex;justify-content:center;align-items:center}
+.hero-visual-inner{width:100%;max-width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.08),transparent 70%);display:flex;align-items:center;justify-content:center;position:relative}
+.hero-visual-inner::before{content:'';position:absolute;width:320px;height:320px;border-radius:50%;border:1px solid rgba(201,168,76,.12);animation:pulse-ring 4s ease-in-out infinite}
+.hero-visual-inner::after{content:'';position:absolute;width:240px;height:240px;border-radius:50%;border:1px solid rgba(201,168,76,.08);animation:pulse-ring 4s ease-in-out infinite 1s}
+@keyframes pulse-ring{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.05);opacity:.5}}
+.hero-visual-text{text-align:center;color:var(--white);position:relative;z-index:1}
+.hero-visual-text .big{font-family:"Playfair Display",serif;font-size:4rem;font-weight:700;color:var(--gold);line-height:1}
+.hero-visual-text .small{font-size:.85rem;color:rgba(255,255,255,.5);margin-top:.5rem;letter-spacing:2px;text-transform:uppercase}
+</style>
+
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="eyebrow">Revenue Architecture</div>
+      <h1>Translating Signals into <em>Confident Growth</em></h1>
+      <p class="hero-sub">FutureReady helps leadership teams turn ambiguous market signals into clear, testable commercial decisions — and align execution before uncertainty becomes costly.</p>
+      <div class="hero-actions">
+        <a href="diagnostic.html" class="btn-primary">Run the Diagnostic &rarr;</a>
+        <a href="solutions.html" class="btn-outline">How It Works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">60%</div><div class="lbl">Faster decision cycles</div></div>
+        <div class="hero-stat"><div class="num">40%</div><div class="lbl">Less strategy drift</div></div>
+        <div class="hero-stat"><div class="num">3&times;</div><div class="lbl">Alignment improvement</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-visual-inner">
+        <div class="hero-visual-text">
+          <div class="big">FR</div>
+          <div class="small">FutureReady Advisory</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM SECTION -->
+<style>
+.problem-section{background:var(--cream);padding:7rem 2rem}
+.problem-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+@media(max-width:900px){.problem-inner{grid-template-columns:1fr;gap:4rem}}
+.problem-cards{display:flex;flex-direction:column;gap:1.25rem}
+.problem-card{background:var(--white);border-left:2px solid var(--gold);padding:1.5rem 1.75rem;border-radius:0 6px 6px 0;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s}
+.problem-card:hover{transform:translateX(4px);box-shadow:var(--shadow-lg)}
+.problem-card h4{font-weight:600;color:var(--navy);font-size:1rem;margin-bottom:.4rem}
+.problem-card p{font-size:.9rem;color:var(--gray);line-height:1.6}
+</style>
+
+<section class="problem-section">
+  <div class="problem-inner">
+    <div class="fade-in">
+      <div class="section-label">The Problem</div>
+      <h2 class="section-title">You don't have a strategy problem. You have a <em style="color:var(--gold);font-style:normal">decision problem</em>.</h2>
+      <p class="section-sub">You have data, initiatives, and capable teams — and yet execution keeps drifting. The issue isn't effort. It's that the decisions behind your strategy are unclear, untested, or misaligned.</p>
+      <div style="margin-top:2.5rem"><a href="solutions.html" class="btn-navy">Learn Our Approach &rarr;</a></div>
+    </div>
+    <div class="problem-cards">
+      <div class="problem-card fade-in"><h4>Priorities keep shifting</h4><p>Every quarter brings a new direction. Teams lose confidence and momentum.</p></div>
+      <div class="problem-card fade-in"><h4>Decisions get revisited</h4><p>The same debates resurface month after month, consuming leadership bandwidth.</p></div>
+      <div class="problem-card fade-in"><h4>Execution drifts</h4><p>Teams work hard, but in slightly different directions. Results don't match effort.</p></div>
+      <div class="problem-card fade-in"><h4>Signals become noise</h4><p>You can't tell which market signal matters until it's too late to act decisively.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<style>
+.how-section{background:var(--navy);padding:7rem 2rem;position:relative;overflow:hidden}
+.how-section::before{content:"";position:absolute;right:-250px;top:-250px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.05),transparent 70%)}
+.how-inner{max-width:1280px;margin:0 auto;position:relative}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;margin-top:4rem}
+@media(max-width:860px){.steps-grid{grid-template-columns:1fr}}
+.step-card{padding:2.5rem 2rem;border:1px solid rgba(255,255,255,.07);border-radius:8px;background:rgba(255,255,255,.025);transition:border-color .3s,transform .3s,background .3s}
+.step-card:hover{border-color:rgba(201,168,76,.3);transform:translateY(-6px);background:rgba(255,255,255,.04)}
+.step-num{font-family:"Playfair Display",serif;font-size:3.8rem;font-weight:700;color:rgba(201,168,76,.12);line-height:1;margin-bottom:1rem}
+.step-card h3{font-family:"Playfair Display",serif;font-size:1.3rem;color:var(--white);margin-bottom:1rem}
+.step-card p{font-size:.92rem;color:rgba(255,255,255,.5);line-height:1.7}
+</style>
+
+<section class="how-section">
+  <div class="how-inner">
+    <div style="text-align:center;max-width:640px;margin:0 auto" class="fade-in">
+      <div class="section-label" style="justify-content:center">How It Works</div>
+      <h2 class="section-title light">Three steps to decision clarity</h2>
+      <p class="section-sub light" style="margin:0 auto">We don't think about growth as a list of channels. We think about it as a system.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card fade-in"><div class="step-num">01</div><h3>What's Actually Changing</h3><p>We identify market, customer, and competitive signals that matter — separating inflection points from background noise.</p></div>
+      <div class="step-card fade-in"><div class="step-num">02</div><h3>What Matters Now</h3><p>We translate signals into 3–5 critical decisions. Not a 50-item priority list — the choices that actually move the needle.</p></div>
+      <div class="step-card fade-in"><div class="step-num">03</div><h3>How to Act Without Drift</h3><p>We align execution, define early warning triggers, and build adaptive mechanisms so your organization stays on course.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<style>
+.outcomes-section{background:var(--cream-dark);padding:7rem 2rem}
+.outcomes-inner{max-width:1280px;margin:0 auto}
+.outcomes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;margin-top:4rem}
+@media(max-width:960px){.outcomes-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.outcomes-grid{grid-template-columns:1fr}}
+.outcome-item{background:var(--white);padding:2rem;border-radius:8px;box-shadow:var(--shadow);display:flex;gap:1.25rem;align-items:flex-start;transition:transform .25s,box-shadow .25s}
+.outcome-item:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.outcome-icon{font-size:1.6rem;flex-shrink:0;width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--cream-dark);border-radius:8px}
+.outcome-item h4{font-weight:600;color:var(--navy);font-size:1rem;margin-bottom:.4rem}
+.outcome-item p{font-size:.88rem;color:var(--gray);line-height:1.6}
+</style>
+
+<section class="outcomes-section">
+  <div class="outcomes-inner">
+    <div style="text-align:center;max-width:640px;margin:0 auto" class="fade-in">
+      <div class="section-label" style="justify-content:center">What Changes in 30 Days</div>
+      <h2 class="section-title">From uncertainty to actionable clarity</h2>
+    </div>
+    <div class="outcomes-grid">
+      <div class="outcome-item fade-in"><div class="outcome-icon">&#127919;</div><div><h4>3–5 Priority Decisions</h4><p>A clear set of decisions that determine your next 6–12 months.</p></div></div>
+      <div class="outcome-item fade-in"><div class="outcome-icon">&#128203;</div><div><h4>Explicit Assumptions &amp; Risks</h4><p>Every decision comes with assumptions written down so you know what could prove you wrong.</p></div></div>
+      <div class="outcome-item fade-in"><div class="outcome-icon">&#128276;</div><div><h4>Early Warning Signals</h4><p>Defined triggers that tell you when to adapt — before the cost compounds.</p></div></div>
+      <div class="outcome-item fade-in"><div class="outcome-icon">&#9889;</div><div><h4>Pre-Aligned Triggers</h4><p>Your team knows in advance what conditions require a pivot. No more surprises.</p></div></div>
+      <div class="outcome-item fade-in"><div class="outcome-icon">&#128100;</div><div><h4>Clear Ownership</h4><p>Every decision has an owner. No more diffusion of responsibility.</p></div></div>
+      <div class="outcome-item fade-in"><div class="outcome-icon">&#128640;</div><div><h4>Aligned Execution</h4><p>Your team stops working on initiatives that don't serve the critical few decisions.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<style>
+.stats-bar{background:var(--gold);padding:4rem 2rem}
+.stats-bar-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:3rem}
+@media(max-width:640px){.stats-bar-inner{grid-template-columns:1fr;text-align:center}}
+.stat-block .big{font-family:"Playfair Display",serif;font-size:3.2rem;font-weight:700;color:var(--navy);line-height:1}
+.stat-block .desc{font-size:.9rem;color:var(--navy);opacity:.65;margin-top:.6rem;line-height:1.5}
+</style>
+
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-block fade-in"><div class="big">60%</div><div class="desc">Faster decision cycle time — SaaS, $200M ARR</div></div>
+    <div class="stat-block fade-in"><div class="big">40%</div><div class="desc">Reduction in strategy drift within one quarter</div></div>
+    <div class="stat-block fade-in"><div class="big">3&times;</div><div class="desc">Increase in cross-functional alignment score</div></div>
+  </div>
+</div>
+
+<!-- WHAT WE SOLVE -->
+<style>
+.solve-section{background:var(--cream);padding:7rem 2rem}
+.solve-inner{max-width:1280px;margin:0 auto}
+.solve-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;margin-top:4rem}
+@media(max-width:860px){.solve-grid{grid-template-columns:1fr}}
+.solve-card{background:var(--white);padding:2.25rem;border-radius:8px;box-shadow:var(--shadow);border:1px solid rgba(10,14,26,.04);transition:transform .25s,box-shadow .25s,border-color .25s}
+.solve-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:rgba(201,168,76,.2)}
+.solve-card h4{font-family:"Playfair Display",serif;font-size:1.15rem;color:var(--navy);margin-bottom:.75rem}
+.solve-card p{font-size:.9rem;color:var(--gray);line-height:1.7}
+</style>
+
+<section class="solve-section">
+  <div class="solve-inner">
+    <div style="max-width:640px;margin-bottom:3rem" class="fade-in">
+      <div class="section-label">Where We Create Leverage</div>
+      <h2 class="section-title">What we're hired to solve</h2>
+      <p class="section-sub">We don't add random activity. We help businesses identify what is actually slowing growth, then design the commercial structure that makes scale more repeatable.</p>
+    </div>
+    <div class="solve-grid">
+      <div class="solve-card fade-in"><h4>Positioning and ICP Clarity</h4><p>Helping businesses define who they are really selling to, how the offer should be framed, and where commercial messaging is too vague to convert.</p></div>
+      <div class="solve-card fade-in"><h4>Go-to-Market Structure</h4><p>Bringing order to channels, motion, priorities, and commercial sequencing so growth doesn't rely on guesswork.</p></div>
+      <div class="solve-card fade-in"><h4>Founder-Led Sales Systems</h4><p>Helping founders turn informal selling into a more structured, scalable commercial process.</p></div>
+      <div class="solve-card fade-in"><h4>CRM and Pipeline Discipline</h4><p>Clarifying stages, lead flow, follow-up rhythm, and reporting so teams can manage revenue more deliberately.</p></div>
+      <div class="solve-card fade-in"><h4>Conversion and Funnel Design</h4><p>Identifying where leads drop, where decisions stall, and where growth is being slowed by friction in the buyer journey.</p></div>
+      <div class="solve-card fade-in"><h4>Strategic Revenue Advisory</h4><p>Supporting founders and leadership teams with senior commercial thinking without the cost or complexity of a full-time hire.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM PREVIEW -->
+<style>
+.team-preview{background:var(--navy-mid);padding:7rem 2rem}
+.team-preview-inner{max-width:1280px;margin:0 auto}
+.team-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:4rem}
+@media(max-width:960px){.team-cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.team-cards{grid-template-columns:1fr}}
+.team-card{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.07);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .3s,transform .3s}
+.team-card:hover{border-color:rgba(201,168,76,.35);transform:translateY(-6px)}
+.team-card-img{height:260px;overflow:hidden;position:relative}
+.team-card-img img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .5s ease}
+.team-card:hover .team-card-img img{transform:scale(1.04)}
+.team-card-img::after{content:'';position:absolute;bottom:0;left:0;right:0;height:100px;background:linear-gradient(transparent,rgba(17,24,39,.8))}
+.team-card-body{padding:1.75rem}
+.team-card-body h3{font-family:"Playfair Display",serif;color:var(--white);font-size:1.15rem;margin-bottom:.35rem}
+.team-card-role{font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1rem}
+.team-card-body p{font-size:.87rem;color:rgba(255,255,255,.5);line-height:1.65}
+</style>
+
+<section class="team-preview">
+  <div class="team-preview-inner">
+    <div style="max-width:640px;margin-bottom:3rem" class="fade-in">
+      <div class="section-label">Our Team</div>
+      <h2 class="section-title light">Experience you can trust</h2>
+      <p class="section-sub light">Decades of combined experience across strategy, market intelligence, technology leadership, and execution. We've sat where you sit.</p>
+    </div>
+    <div class="team-cards">
+      <div class="team-card fade-in">
+        <div class="team-card-img"><img src="img/rob.jpg" alt="Robert Goldberg - Managing Partner at FutureReady Advisory"></div>
+        <div class="team-card-body">
+          <h3>Robert Goldberg</h3>
+          <div class="team-card-role">Managing Partner — Strategy &amp; Market Intelligence</div>
+          <p>Strategy and market intelligence executive specializing in portfolio strategy, capital allocation, and data-driven decision-making.</p>
+        </div>
+      </div>
+      <div class="team-card fade-in">
+        <div class="team-card-img"><img src="img/jack.jpg" alt="Jack Lee - Partner at FutureReady Advisory"></div>
+        <div class="team-card-body">
+          <h3>Jack Lee</h3>
+          <div class="team-card-role">Partner — Market Development</div>
+          <p>Strategic advisor specializing in market development, communications strategy, and business growth across North America, Africa, and Europe.</p>
+        </div>
+      </div>
+      <div class="team-card fade-in">
+        <div class="team-card-img"><img src="img/hoel.jpg" alt="Hoel Bautista - Partner at FutureReady Advisory"></div>
+        <div class="team-card-body">
+          <h3>Hoel Bautista</h3>
+          <div class="team-card-role">Partner — Technology &amp; AI Strategy</div>
+          <p>IT executive and AI strategist with 30+ years leading infrastructure, service delivery, and digital transformation across Wall Street and pharma.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:2.5rem" class="fade-in"><a href="leadership.html" class="btn-outline">Meet the Full Team &rarr;</a></div>
+  </div>
+</section>
+
+<!-- INSIGHTS PREVIEW -->
+<style>
+.insights-preview{background:var(--cream);padding:7rem 2rem}
+.insights-inner{max-width:1280px;margin:0 auto}
+.insights-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:4rem}
+@media(max-width:900px){.insights-grid{grid-template-columns:1fr}}
+.insight-card{background:var(--white);border-radius:8px;overflow:hidden;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
+.insight-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.insight-card-img{height:200px;background:var(--navy);position:relative;overflow:hidden}
+.insight-card-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(201,168,76,.15),transparent 70%)}
+.insight-card-body{padding:1.75rem}
+.insight-date{font-size:.72rem;color:var(--gold);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:.75rem}
+.insight-card-body h4{font-family:"Playfair Display",serif;font-size:1.1rem;color:var(--navy);margin-bottom:.6rem;line-height:1.35}
+.insight-card-body p{font-size:.88rem;color:var(--gray);line-height:1.65}
+</style>
+
+<section class="insights-preview">
+  <div class="insights-inner">
+    <div style="max-width:640px;margin-bottom:3rem" class="fade-in">
+      <div class="section-label">Insights</div>
+      <h2 class="section-title">Thinking on growth, systems, and commercial clarity</h2>
+      <p class="section-sub">We write about the realities behind scale: founder dependence, GTM structure, conversion, commercial psychology, and the systems most teams ignore until growth starts breaking.</p>
+    </div>
+    <div class="insights-grid">
+      <article class="insight-card fade-in">
+        <div class="insight-card-img"></div>
+        <div class="insight-card-body">
+          <div class="insight-date">Mar 2026</div>
+          <h4>When Founder-Led Selling Becomes a Bottleneck</h4>
+          <p>The signs that informal selling is limiting growth — and how to build a scalable commercial process without losing the founder's edge.</p>
+        </div>
+      </article>
+      <article class="insight-card fade-in">
+        <div class="insight-card-img"></div>
+        <div class="insight-card-body">
+          <div class="insight-date">Feb 2026</div>
+          <h4>The CRM Problem Nobody Talks About</h4>
+          <p>Most CRMs store noise, not signal. Here's how to redesign your pipeline so it actually supports commercial decisions.</p>
+        </div>
+      </article>
+      <article class="insight-card fade-in">
+        <div class="insight-card-img"></div>
+        <div class="insight-card-body">
+          <div class="insight-date">Jan 2026</div>
+          <h4>AI Agents and the Future of Strategic Advisory</h4>
+          <p>How agentic AI is reshaping the advisory landscape — and why human judgment paired with AI capability creates the most leverage.</p>
+        </div>
+      </article>
+    </div>
+    <div style="margin-top:2.5rem" class="fade-in"><a href="insights.html" class="btn-navy">Read All Insights &rarr;</a></div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<style>
+.home-cta{background:var(--navy);padding:8rem 2rem;text-align:center;position:relative;overflow:hidden}
+.home-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(201,168,76,.08),transparent 60%)}
+.home-cta-inner{max-width:680px;margin:0 auto;position:relative}
+.home-cta h2{font-family:"Playfair Display",serif;font-size:clamp(2.2rem,4.5vw,3rem);color:var(--white);margin-bottom:1.25rem}
+.home-cta p{color:rgba(255,255,255,.55);font-size:1.1rem;margin-bottom:2.75rem;line-height:1.75}
+.cta-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+</style>
+
+<section class="home-cta">
+  <div class="home-cta-inner fade-in">
+    <div class="section-label" style="justify-content:center;margin-bottom:1.5rem">Get Started</div>
+    <h2>Start with your most important decision</h2>
+    <p>Every engagement begins by identifying the decisions that matter most and the uncertainty behind them. Book a free 30-minute strategy diagnosis.</p>
+    <div class="cta-actions">
+      <a href="diagnostic.html" class="btn-primary">Run the Diagnostic &rarr;</a>
+      <a href="contact.html" class="btn-outline">Schedule a Conversation</a>
+    </div>
+    <p style="margin-top:2rem;font-size:.85rem;color:rgba(255,255,255,.35)">No commitment. No sales pitch. Just a focused conversation about the one decision costing you the most right now.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">FR</span>
+        <span class="logo-text">FutureReady<span class="logo-accent"> Advisory</span></span>
+      </a>
+      <p>Translating signals into confident commercial growth. Revenue architecture for leadership teams ready to scale beyond chaos.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="leadership.html">Leadership Team</a>
+        <a href="solutions.html">Our Solutions</a>
+        <a href="diagnostic.html">Diagnostic</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="https://www.linkedin.com/in/robgoldberg/" target="_blank" rel="noopener">Robert Goldberg on LinkedIn</a>
+        <a href="https://www.linkedin.com/in/jkleemktgii/" target="_blank" rel="noopener">Jack Lee on LinkedIn</a>
+        <a href="https://www.linkedin.com/in/hoelbautista/" target="_blank" rel="noopener">Hoel Bautista on LinkedIn</a>
+        <a href="contact.html">Schedule a Conversation</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 FutureReady Advisory. All rights reserved.</p>
+    <p>Revenue architecture for leadership teams.</p>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://futureready-advisory.vercel.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Leadership Team", "item": "https://futureready-advisory.vercel.app/leadership"},
+    {"@type": "ListItem", "position": 3, "name": "Solutions", "item": "https://futureready-advisory.vercel.app/solutions"},
+    {"@type": "ListItem", "position": 4, "name": "Diagnostic", "item": "https://futureready-advisory.vercel.app/diagnostic"},
+    {"@type": "ListItem", "position": 5, "name": "Insights", "item": "https://futureready-advisory.vercel.app/insights"},
+    {"@type": "ListItem", "position": 6, "name": "Contact", "item": "https://futureready-advisory.vercel.app/contact"}
+  ]
+}
+</script>
+
+</body>
+</html>

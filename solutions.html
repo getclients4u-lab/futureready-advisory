@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0e1a">
+<title>Solutions | FutureReady Advisory — Revenue Architecture & GTM Strategy</title>
+<meta name="description" content="FutureReady Advisory solutions: revenue architecture, go-to-market strategy, market intelligence, conversion optimization, and strategic advisory for leadership teams.">
+<meta name="keywords" content="revenue architecture, go-to-market strategy, market intelligence, conversion optimization, strategic advisory, leadership consulting, commercial growth">
+<link rel="canonical" href="https://futureready-advisory.vercel.app/solutions.html">
+<meta property="og:title" content="Solutions | FutureReady Advisory">
+<meta property="og:description" content="Revenue architecture and GTM strategy solutions for leadership teams ready to scale.">
+<meta property="og:url" content="https://futureready-advisory.vercel.app/solutions">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FutureReady Advisory">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+<link rel="stylesheet" href="shared.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Revenue Architecture & Strategic Advisory",
+  "provider": {"@type": "Organization", "name": "FutureReady Advisory", "url": "https://futureready-advisory.vercel.app/"},
+  "areaServed": ["North America", "Europe", "Africa"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "FutureReady Advisory Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Revenue Architecture"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Go-to-Market Strategy"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Market Intelligence"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Conversion Optimization"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Strategic Advisory"}}
+    ]
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="FutureReady Advisory Home">
+      <span class="logo-mark">FR</span>
+      <span class="logo-text">FutureReady<span class="logo-accent"> Advisory</span></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+      <a href="leadership.html">Team</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="diagnostic.html">Diagnostic</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html" class="nav-cta">Get Started</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<style>
+.solutions-hero{background:var(--navy);padding:10rem 2rem 6rem;position:relative;overflow:hidden}
+.solutions-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 60% 40%,rgba(201,168,76,.08),transparent 65%)}
+.solutions-hero-inner{max-width:900px;margin:0 auto;position:relative}
+.approach-section{background:var(--cream);padding:7rem 2rem}
+.approach-inner{max-width:1280px;margin:0 auto}
+.approach-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2.5rem;margin-top:4rem}
+@media(max-width:860px){.approach-grid{grid-template-columns:1fr}}
+.approach-card{background:var(--white);padding:2.5rem;border-radius:10px;box-shadow:var(--shadow);border:1px solid rgba(10,14,26,.04);transition:transform .3s,box-shadow .3s,border-color .3s}
+.approach-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:rgba(201,168,76,.2)}
+.approach-card h3{font-family:"Playfair Display",serif;font-size:1.25rem;color:var(--navy);margin-bottom:1rem}
+.approach-card p{font-size:.9rem;color:var(--gray);line-height:1.75;margin-bottom:1.25rem}
+.approach-card ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.approach-card li{font-size:.85rem;color:var(--text);display:flex;gap:.6rem;align-items:flex-start}
+.approach-card li::before{content:"•";color:var(--gold);font-weight:700;flex-shrink:0}
+.process-section{background:var(--navy-mid);padding:7rem 2rem}
+.process-inner{max-width:1280px;margin:0 auto}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:4rem}
+@media(max-width:960px){.process-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.process-grid{grid-template-columns:1fr}}
+.process-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:2rem;transition:border-color .3s,transform .3s}
+.process-card:hover{border-color:rgba(201,168,76,.3);transform:translateY(-4px)}
+.process-num{font-family:"Playfair Display",serif;font-size:2.5rem;font-weight:700;color:var(--gold);opacity:.25;line-height:1;margin-bottom:1rem}
+.process-card h4{font-family:"Playfair Display",serif;font-size:1.1rem;color:var(--white);margin-bottom:.75rem}
+.process-card p{font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.7}
+.pricing-section{background:var(--cream-dark);padding:7rem 2rem}
+.pricing-inner{max-width:1100px;margin:0 auto}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:4rem}
+@media(max-width:860px){.pricing-grid{grid-template-columns:1fr;max-width:480px;margin:4rem auto 0}}
+.pricing-card{background:var(--white);border-radius:12px;padding:2.5rem;box-shadow:var(--shadow);text-align:center;transition:transform .3s,box-shadow .3s;position:relative}
+.pricing-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.pricing-card.featured{border:2px solid var(--gold)}
+.pricing-card.featured::before{content:"Most Popular";position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-size:.7rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:.35rem 1rem;border-radius:2px}
+.pricing-tier{font-family:"Playfair Display",serif;font-size:1.3rem;color:var(--navy);margin-bottom:.5rem}
+.pricing-price{font-family:"Playfair Display",serif;font-size:2.8rem;font-weight:700;color:var(--navy);line-height:1;margin:1.5rem 0}
+.pricing-price span{font-size:1rem;color:var(--gray);font-weight:400;font-family:'DM Sans',sans-serif}
+.pricing-desc{font-size:.9rem;color:var(--gray);margin-bottom:1.5rem;line-height:1.6}
+.pricing-features{list-style:none;text-align:left;display:flex;flex-direction:column;gap:.75rem;margin-bottom:2rem}
+.pricing-features li{font-size:.88rem;color:var(--text);display:flex;gap:.6rem;align-items:flex-start}
+.pricing-features li::before{content:"✓";color:var(--gold);font-weight:700;flex-shrink:0}
+</style>
+
+<section class="solutions-hero">
+  <div class="solutions-hero-inner">
+    <div class="section-label">Solutions</div>
+    <h1 class="section-title light" style="font-size:clamp(2.4rem,4.5vw,3.4rem)">Revenue architecture for businesses ready to scale beyond chaos.</h1>
+    <p class="section-sub light" style="max-width:680px;margin-top:.75rem">Clarity. Structure. Systems that compound. We don't add random activity — we design the commercial engine underneath sustainable growth.</p>
+  </div>
+</section>
+
+<section class="approach-section">
+  <div class="approach-inner">
+    <div style="max-width:640px;margin-bottom:3rem" class="fade-in">
+      <div class="section-label">What We Deliver</div>
+      <h2 class="section-title">Where we create the most leverage</h2>
+    </div>
+    <div class="approach-grid">
+      <div class="approach-card fade-in">
+        <h3>Revenue Architecture</h3>
+        <p>Design the full system behind growth — from positioning and ICP clarity to pipeline structure and revenue reporting.</p>
+        <ul>
+          <li>Positioning and messaging framework</li>
+          <li>ICP definition and segmentation</li>
+          <li>Revenue model and pricing strategy</li>
+          <li>Pipeline stage design and CRM structure</li>
+          <li>KPI and reporting framework</li>
+        </ul>
+      </div>
+      <div class="approach-card fade-in">
+        <h3>Go-to-Market Strategy</h3>
+        <p>Bring order to channels, motion, priorities, and commercial sequencing so growth doesn't rely on guesswork.</p>
+        <ul>
+          <li>Channel strategy and prioritization</li>
+          <li>Sales motion design (inbound, outbound, PLG)</li>
+          <li>Commercial sequencing and timing</li>
+          <li>Team structure and role definition</li>
+          <li>Founder-led sales scaling</li>
+        </ul>
+      </div>
+      <div class="approach-card fade-in">
+        <h3>Market Intelligence</h3>
+        <p>Identify the signals that matter — separating inflection points from background noise before they become costly.</p>
+        <ul>
+          <li>Competitive landscape analysis</li>
+          <li>Customer signal identification</li>
+          <li>Market trend validation</li>
+          <li>Early warning trigger design</li>
+          <li>Scenario planning frameworks</li>
+        </ul>
+      </div>
+      <div class="approach-card fade-in">
+        <h3>Conversion & Funnel Design</h3>
+        <p>Identify where leads drop, where decisions stall, and where growth is being slowed by friction in the buyer journey.</p>
+        <ul>
+          <li>Funnel audit and friction mapping</li>
+          <li>Landing page and messaging optimization</li>
+          <li>Lead nurturing sequence design</li>
+          <li>Sales handoff process improvement</li>
+          <li>Conversion rate benchmarking</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process-section">
+  <div class="process-inner">
+    <div style="text-align:center;max-width:640px;margin:0 auto" class="fade-in">
+      <div class="section-label" style="justify-content:center">Our Process</div>
+      <h2 class="section-title light">How engagements work</h2>
+      <p class="section-sub light" style="margin:0 auto">A structured, collaborative process designed to deliver clarity quickly — without the overhead of traditional consulting.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-card fade-in">
+        <div class="process-num">01</div>
+        <h4>Discovery & Diagnosis</h4>
+        <p>We start with a focused diagnostic to understand your current state, identify the decisions that matter most, and map the uncertainty behind them.</p>
+      </div>
+      <div class="process-card fade-in">
+        <div class="process-num">02</div>
+        <h4>Signal Analysis</h4>
+        <p>We analyze market, customer, and competitive signals to separate inflection points from noise — building the evidence base for critical decisions.</p>
+      </div>
+      <div class="process-card fade-in">
+        <div class="process-num">03</div>
+        <h4>Decision Framework</h4>
+        <p>We translate signals into 3–5 critical decisions with explicit assumptions, risks, and early warning triggers — not a 50-item priority list.</p>
+      </div>
+      <div class="process-card fade-in">
+        <div class="process-num">04</div>
+        <h4>Execution Alignment</h4>
+        <p>We align your team around the critical decisions, define ownership, and build adaptive mechanisms so execution stays on course.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section">
+  <div class="pricing-inner">
+    <div style="text-align:center;max-width:640px;margin:0 auto" class="fade-in">
+      <div class="section-label" style="justify-content:center">Engagement Options</div>
+      <h2 class="section-title">How we work together</h2>
+      <p class="section-sub" style="margin:0 auto">Flexible engagement models designed to meet you where you are — from focused diagnostics to ongoing advisory partnerships.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card fade-in">
+        <div class="pricing-tier">Strategy Diagnosis</div>
+        <div class="pricing-price">$5,000<span> / one-time</span></div>
+        <p class="pricing-desc">A focused 2-week engagement to identify your most important decision and the uncertainty behind it.</p>
+        <ul class="pricing-features">
+          <li>2-hour leadership workshop</li>
+          <li>Decision clarity framework</li>
+          <li>Signal prioritization map</li>
+          <li>Written diagnosis report</li>
+          <li>30-day action roadmap</li>
+        </ul>
+        <a href="contact.html" class="btn-navy" style="width:100%;justify-content:center">Book Diagnosis</a>
+      </div>
+      <div class="pricing-card featured fade-in">
+        <div class="pricing-tier">Revenue Architecture</div>
+        <div class="pricing-price">$25,000<span> / 6 weeks</span></div>
+        <p class="pricing-desc">A comprehensive engagement to design the full commercial system behind scalable growth.</p>
+        <ul class="pricing-features">
+          <li>Full diagnostic + signal analysis</li>
+          <li>Positioning and ICP framework</li>
+          <li>GTM structure and sequencing</li>
+          <li>CRM and pipeline design</li>
+          <li>Conversion optimization plan</li>
+          <li>90-day execution roadmap</li>
+          <li>2 follow-up sessions</li>
+        </ul>
+        <a href="contact.html" class="btn-primary" style="width:100%;justify-content:center">Start Project</a>
+      </div>
+      <div class="pricing-card fade-in">
+        <div class="pricing-tier">Advisory Partnership</div>
+        <div class="pricing-price">$8,000<span> / month</span></div>
+        <p class="pricing-desc">Ongoing strategic partnership for leadership teams navigating continuous growth and market change.</p>
+        <ul class="pricing-features">
+          <li>Monthly strategy sessions</li>
+          <li>Signal monitoring and alerts</li>
+          <li>Decision framework updates</li>
+          <li>Team alignment workshops</li>
+          <li>Priority Slack access</li>
+          <li>Quarterly business reviews</li>
+        </ul>
+        <a href="contact.html" class="btn-navy" style="width:100%;justify-content:center">Apply for Partnership</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="home-cta" style="background:var(--navy);padding:6rem 2rem;text-align:center">
+  <div class="home-cta-inner fade-in" style="max-width:640px;margin:0 auto">
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--white);margin-bottom:1.25rem">Not sure which option fits?</h2>
+    <p style="color:rgba(255,255,255,.55);font-size:1.05rem;margin-bottom:2rem;line-height:1.7">Book a free 20-minute conversation. We'll help you identify the right starting point based on where you are today.</p>
+    <a href="contact.html" class="btn-primary">Schedule a Call &rarr;</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">FR</span>
+        <span class="logo-text">FutureReady<span class="logo-accent"> Advisory</span></span>
+      </a>
+      <p>Translating signals into confident commercial growth.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="leadership.html">Leadership Team</a>
+        <a href="solutions.html">Our Solutions</a>
+        <a href="diagnostic.html">Diagnostic</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="https://www.linkedin.com/in/robgoldberg/" target="_blank" rel="noopener">Robert Goldberg on LinkedIn</a>
+        <a href="https://www.linkedin.com/in/jkleemktgii/" target="_blank" rel="noopener">Jack Lee on LinkedIn</a>
+        <a href="https://www.linkedin.com/in/hoelbautista/" target="_blank" rel="noopener">Hoel Bautista on LinkedIn</a>
+        <a href="contact.html">Schedule a Conversation</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 FutureReady Advisory. All rights reserved.</p>
+    <p>Revenue architecture for leadership teams.</p>
+  </div>
+</footer>
+<script src="shared.js"></script>
+
+</body>
+</html>
